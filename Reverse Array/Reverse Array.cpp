@@ -2,11 +2,24 @@
 //
 
 #include <iostream>
+#include <random>
 
 int main()
 {
     std::cout << "Hello World!\n";
- 
+    // Create random number generator for numbers 1-15
+    //std::random_device rd("default");
+
+    //std::uniform_int_distribution uid(1, 15);
+
+    int array[5];
+    int i;
+    
+    // Fill an array
+    for (i = 0; i < 5; i++)
+      {
+          std::cin >> array[i];
+      }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
