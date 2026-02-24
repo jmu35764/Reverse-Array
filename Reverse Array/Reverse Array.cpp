@@ -2,7 +2,8 @@
 //
 
 #include <iostream>
-#include <random>
+#include <iomanip>
+//#include <random>
 
 int main()
 {
@@ -13,13 +14,26 @@ int main()
     //std::uniform_int_distribution uid(1, 15);
 
     int array[5];
+    int rev_array[5];
     int i;
+    int j;
     
     // Fill an array
     for (i = 0; i < 5; i++)
       {
           std::cin >> array[i];
       }
+
+    // Code to put array in reverse order
+    for (j = 0; j < 5; j++)
+    {
+        rev_array[i] = array[4 - i];
+    }
+
+    for (int k = 0; k < 5; k++)
+    {
+        std::cout << std::setw(4) << array[k] << std::setw(4) << rev_array[k] << std::endl;
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
