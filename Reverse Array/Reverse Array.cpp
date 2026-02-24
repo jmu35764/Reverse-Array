@@ -27,7 +27,7 @@ int main()
     // Code to put array in reverse order
     for (j = 0; j < 5; j++)
     {
-        rev_array[i] = array[4 - i];
+        rev_array[j] = array[4 - j];
     }
 
     for (int k = 0; k < 5; k++)
