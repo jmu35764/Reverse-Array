@@ -5,7 +5,7 @@
 #include <iomanip>
 //#include <random>
 
-int* ReverseArray(const int arr[], int size);
+//int* ReverseArray(const int arr[], int size);
 
 int main()
 {
@@ -25,6 +25,7 @@ int main()
       {
           std::cin >> array[i];
       }*/
+    std::cout << "Code is running" << std::endl;
 
     int *rev_array = ReverseArray(array, SIZE);
 
