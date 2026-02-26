@@ -5,7 +5,7 @@
 #include <iomanip>
 //#include <random>
 
-//int* ReverseArray(const int arr[], int size);
+int* ReverseArray(const int arr[], int size);
 
 int main()
 {
@@ -16,9 +16,9 @@ int main()
     //std::uniform_int_distribution uid(1, 15);
     const int SIZE = 5;
     const int array[SIZE] = { 1,2,3,4,5 };
-    int rev_array[SIZE];
-    int i;
-    int j;
+    //int rev_array[];
+    //int i;
+   // int j;
     
     // Fill an array
     /*for (i = 0; i < SIZE; i++)
