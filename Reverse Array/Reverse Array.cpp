@@ -39,6 +39,8 @@ int main()
     {
         std::cout << std::setw(4) << array[k] << std::setw(4) << rev_array[k] << std::endl;
     }
+
+    delete[] rev_array;
 }
 
 int* ReverseArray(const int arr[], int size)
