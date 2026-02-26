@@ -9,7 +9,7 @@ int* ReverseArray(const int arr[], int size);
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //std::cout << "Hello World!\n";
     // Create random number generator for numbers 1-15
     //std::random_device rd("default");
 
@@ -26,7 +26,7 @@ int main()
           std::cin >> array[i];
       }*/
 
-    int *prt = ReverseArray(array, SIZE);
+    int *rev_array = ReverseArray(array, SIZE);
 
     // Code to put array in reverse order
     /*for (j = 0; j < SIZE; j++)
