@@ -5,6 +5,8 @@
 #include <iomanip>
 //#include <random>
 
+int* ReverseArray(const int arr[], int size);
+
 int main()
 {
     std::cout << "Hello World!\n";
@@ -12,30 +14,43 @@ int main()
     //std::random_device rd("default");
 
     //std::uniform_int_distribution uid(1, 15);
-
-    int array[5];
-    int rev_array[5];
+    const int SIZE = 5;
+    const int array[SIZE] = { 1,2,3,4,5 };
+    int rev_array[SIZE];
     int i;
     int j;
     
     // Fill an array
-    for (i = 0; i < 5; i++)
+    /*for (i = 0; i < SIZE; i++)
       {
           std::cin >> array[i];
-      }
+      }*/
+
+    int *prt = ReverseArray(array, SIZE);
 
     // Code to put array in reverse order
-    for (j = 0; j < 5; j++)
+    /*for (j = 0; j < SIZE; j++)
     {
         rev_array[j] = array[4 - j];
-    }
+    }*/
 
-    for (int k = 0; k < 5; k++)
+    for (int k = 0; k < SIZE; k++)
     {
         std::cout << std::setw(4) << array[k] << std::setw(4) << rev_array[k] << std::endl;
     }
 }
 
+int* ReverseArray(const int arr[], int size)
+{
+    int* revarry = new int[size];
+
+    for (int j = 0; j < size; j++)
+    {
+        revarry[j] = arr[size-1 - j];
+    }
+
+    return revarry;
+}
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
