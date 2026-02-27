@@ -29,16 +29,13 @@ int main()
 
     int *rev_array = ReverseArray(array, SIZE);
 
+    print(array, SIZE);
+    print(rev_array, SIZE);
     // Code to put array in reverse order
     /*for (j = 0; j < SIZE; j++)
     {
         rev_array[j] = array[4 - j];
     }*/
-
-    for (int k = 0; k < SIZE; k++)
-    {
-        std::cout << std::setw(4) << array[k] << std::setw(4) << rev_array[k] << std::endl;
-    }
 
     delete[] rev_array;
 }
@@ -52,7 +49,20 @@ int* ReverseArray(const int arr[], int size)
         revarry[j] = arr[size-1 - j];
     }
 
+    /*for (int k = 0; k < size; k++)
+    {
+        std::cout << std::setw(4) << arr[k] << std::setw(4) << rev_array[k] << std::endl;
+    }*/
+
     return revarry;
+}
+
+void print(const int arr[], int size)
+{
+    for (int k = 0; k < size; k++)
+    {
+        std::cout << std::setw(4) << arr[k] << std::endl;
+    }
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
