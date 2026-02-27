@@ -6,6 +6,7 @@
 //#include <random>
 
 int* ReverseArray(const int arr[], int size);
+void print(const int arr[], int size);
 
 int main()
 {
