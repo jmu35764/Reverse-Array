@@ -17,7 +17,10 @@ int main()
 
     int *rev_array = ReverseArray(array, SIZE);
 
+    std::cout << "Original Array" << std::endl;
     print(array, SIZE);
+
+    std::cout << std::endl << "Reversed Array" << std::endl;
     print(rev_array, SIZE);
 
     delete[] rev_array;
@@ -31,11 +34,6 @@ int* ReverseArray(const int arr[], int size)
     {
         revarry[j] = arr[size-1 - j];
     }
-
-    /*for (int k = 0; k < size; k++)
-    {
-        std::cout << std::setw(4) << arr[k] << std::setw(4) << rev_array[k] << std::endl;
-    }*/
 
     return revarry;
 }
