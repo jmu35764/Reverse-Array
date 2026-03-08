@@ -13,10 +13,13 @@ int main()
     const int SIZE = 5;
     const int array[SIZE] = { 1,2,3,4,5 };
 
+    std::cout << &SIZE << std::endl;
     std::cout << "Code is running" << std::endl;
 
     int *rev_array = ReverseArray(array, SIZE);
 
+    std::cout << rev_array << std::endl;
+    
     std::cout << "Original Array" << std::endl;
     print(array, SIZE);
 
@@ -24,6 +27,8 @@ int main()
     print(rev_array, SIZE);
 
     delete[] rev_array;
+
+    std::cout << *rev_array << std::endl;
 }
 
 int* ReverseArray(const int arr[], int size)
